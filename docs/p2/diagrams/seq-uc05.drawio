@@ -1,198 +1,188 @@
-<?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net">
-  <diagram name="UC-05 Analysis Sequence" id="seq-uc05">
-    <mxGraphModel page="1" pageWidth="1900" pageHeight="1900">
+  <diagram name="Page-1" id="5zSVgxvlqwjDREPfQ4bE">
+    <mxGraphModel dx="1374" dy="3015" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="UC-05 Place Table Order — Analysis Sequence" style="text;html=0;fontSize=30;fontStyle=1;align=center;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="30" y="10" width="1840" height="45" />
+        <mxCell id="Server" parent="1" style="rounded=0;whiteSpace=nowrap;html=0;fillColor=#ffffff;strokeColor=#000000;fontSize=18;" value="Server" vertex="1">
+          <mxGeometry height="50" width="240" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" value="Main success path — M01–M21 match Section 5.2.2 — OrderPlacement coordinates" style="text;html=0;fontSize=19;align=center;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="30" y="58" width="1840" height="35" />
-        </mxCell>
-        <mxCell id="Server" value="Server&#10;external actor" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8eef8;strokeColor=#334155;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="2" y="110" width="236" height="68" />
-        </mxCell>
-        <mxCell id="life-Server" style="endArrow=none;dashed=1;strokeColor=#94a3b8;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="120" y="178" />
-            <mxPoint as="targetPoint" x="120" y="1830" />
+        <mxCell id="life0" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="80" as="sourcePoint" />
+            <mxPoint x="120" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OrderPlacement" value="OrderPlacement&#10;interaction controller" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8eef8;strokeColor=#334155;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="332" y="110" width="236" height="68" />
+        <mxCell id="OrderPlacement" parent="1" style="rounded=0;whiteSpace=nowrap;html=0;fillColor=#ffffff;strokeColor=#000000;fontSize=18;" value="OrderPlacement (controller)" vertex="1">
+          <mxGeometry height="50" width="240" x="330" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="life-OrderPlacement" style="endArrow=none;dashed=1;strokeColor=#94a3b8;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="178" />
-            <mxPoint as="targetPoint" x="450" y="1830" />
+        <mxCell id="life1" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="80" as="sourcePoint" />
+            <mxPoint x="450" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Table" value="Table&#10;domain concept" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8eef8;strokeColor=#334155;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="662" y="110" width="236" height="68" />
+        <mxCell id="Table" parent="1" style="rounded=0;whiteSpace=nowrap;html=0;fillColor=#ffffff;strokeColor=#000000;fontSize=18;" value="Table" vertex="1">
+          <mxGeometry height="50" width="240" x="660" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="life-Table" style="endArrow=none;dashed=1;strokeColor=#94a3b8;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="780" y="178" />
-            <mxPoint as="targetPoint" x="780" y="1830" />
+        <mxCell id="life2" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="80" as="sourcePoint" />
+            <mxPoint x="780" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MenuItem" value="MenuItem&#10;domain concept" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8eef8;strokeColor=#334155;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="992" y="110" width="236" height="68" />
+        <mxCell id="MenuItem" parent="1" style="rounded=0;whiteSpace=nowrap;html=0;fillColor=#ffffff;strokeColor=#000000;fontSize=18;" value="MenuItem" vertex="1">
+          <mxGeometry height="50" width="240" x="990" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="life-MenuItem" style="endArrow=none;dashed=1;strokeColor=#94a3b8;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1110" y="178" />
-            <mxPoint as="targetPoint" x="1110" y="1830" />
+        <mxCell id="life3" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="80" as="sourcePoint" />
+            <mxPoint x="1110" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Order" value="Order&#10;domain concept" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8eef8;strokeColor=#334155;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="1322" y="110" width="236" height="68" />
+        <mxCell id="Order" parent="1" style="rounded=0;whiteSpace=nowrap;html=0;fillColor=#ffffff;strokeColor=#000000;fontSize=18;" value="Order" vertex="1">
+          <mxGeometry height="50" width="240" x="1320" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="life-Order" style="endArrow=none;dashed=1;strokeColor=#94a3b8;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1440" y="178" />
-            <mxPoint as="targetPoint" x="1440" y="1830" />
+        <mxCell id="life4" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="80" as="sourcePoint" />
+            <mxPoint x="1440" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KitchenQueue" value="KitchenQueue&#10;domain concept" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e8eef8;strokeColor=#334155;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="1652" y="110" width="236" height="68" />
+        <mxCell id="KitchenQueue" parent="1" style="rounded=0;whiteSpace=nowrap;html=0;fillColor=#ffffff;strokeColor=#000000;fontSize=18;" value="KitchenQueue" vertex="1">
+          <mxGeometry height="50" width="240" x="1650" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="life-KitchenQueue" style="endArrow=none;dashed=1;strokeColor=#94a3b8;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1770" y="178" />
-            <mxPoint as="targetPoint" x="1770" y="1830" />
+        <mxCell id="life5" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1770" y="80" as="sourcePoint" />
+            <mxPoint x="1770" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M01" value="M01 (0) asks for occupied tables" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="240" />
-            <mxPoint as="targetPoint" x="780" y="240" />
+        <mxCell id="M01" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M01 (0) asks for occupied tables">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="150" as="sourcePoint" />
+            <mxPoint x="780" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M02" value="M02 (0) provides occupied table numbers" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="780" y="316" />
-            <mxPoint as="targetPoint" x="450" y="316" />
+        <mxCell id="M02" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M02 (0) provides occupied table numbers">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="226" as="sourcePoint" />
+            <mxPoint x="450" y="226" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M03" value="M03 (0) presents occupied tables" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="392" />
-            <mxPoint as="targetPoint" x="120" y="392" />
+        <mxCell id="M03" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M03 (0) presents occupied tables">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="302" as="sourcePoint" />
+            <mxPoint x="120" y="302" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M04" value="M04 (1) identifies table and requests order" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="120" y="468" />
-            <mxPoint as="targetPoint" x="450" y="468" />
+        <mxCell id="M04" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M04 (1) identifies table and requests order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="378" as="sourcePoint" />
+            <mxPoint x="450" y="378" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M05" value="M05 (2) asks for menu availability" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="544" />
-            <mxPoint as="targetPoint" x="1110" y="544" />
+        <mxCell id="M05" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M05 (2) asks for menu availability">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="454" as="sourcePoint" />
+            <mxPoint x="1110" y="454" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M06" value="M06 (2) provides items and availability" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1110" y="620" />
-            <mxPoint as="targetPoint" x="450" y="620" />
+        <mxCell id="M06" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M06 (2) provides items and availability">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="530" as="sourcePoint" />
+            <mxPoint x="450" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M07" value="M07 (2) presents items and availability" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="696" />
-            <mxPoint as="targetPoint" x="120" y="696" />
+        <mxCell id="M07" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M07 (2) presents items and availability">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="606" as="sourcePoint" />
+            <mxPoint x="120" y="606" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M08" value="M08 (3) supplies order contents" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="120" y="772" />
-            <mxPoint as="targetPoint" x="450" y="772" />
+        <mxCell id="M08" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M08 (3) supplies order contents">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="682" as="sourcePoint" />
+            <mxPoint x="450" y="682" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M09" value="M09 (4) composes draft order" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="848" />
-            <mxPoint as="targetPoint" x="1440" y="848" />
+        <mxCell id="M09" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M09 (4) composes draft order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="758" as="sourcePoint" />
+            <mxPoint x="1440" y="758" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M10" value="M10 (4) provides draft summary" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1440" y="924" />
-            <mxPoint as="targetPoint" x="450" y="924" />
+        <mxCell id="M10" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M10 (4) provides draft summary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="834" as="sourcePoint" />
+            <mxPoint x="450" y="834" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M11" value="M11 (4) presents draft for confirmation" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="1000" />
-            <mxPoint as="targetPoint" x="120" y="1000" />
+        <mxCell id="M11" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M11 (4) presents draft for confirmation">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="910" as="sourcePoint" />
+            <mxPoint x="120" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M12" value="M12 (5) confirms draft order" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="120" y="1076" />
-            <mxPoint as="targetPoint" x="450" y="1076" />
+        <mxCell id="M12" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M12 (5) confirms draft order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="986" as="sourcePoint" />
+            <mxPoint x="450" y="986" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M13" value="M13 (6) rechecks table occupancy" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="1152" />
-            <mxPoint as="targetPoint" x="780" y="1152" />
+        <mxCell id="M13" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M13 (6) rechecks table occupancy">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1062" as="sourcePoint" />
+            <mxPoint x="780" y="1062" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M14" value="M14 (6) confirms table is occupied" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="780" y="1228" />
-            <mxPoint as="targetPoint" x="450" y="1228" />
+        <mxCell id="M14" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M14 (6) confirms table is occupied">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="1138" as="sourcePoint" />
+            <mxPoint x="450" y="1138" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M15" value="M15 (6) rechecks item availability" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="1304" />
-            <mxPoint as="targetPoint" x="1110" y="1304" />
+        <mxCell id="M15" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M15 (6) rechecks item availability">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1214" as="sourcePoint" />
+            <mxPoint x="1110" y="1214" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M16" value="M16 (6) confirms all items available" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1110" y="1380" />
-            <mxPoint as="targetPoint" x="450" y="1380" />
+        <mxCell id="M16" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M16 (6) confirms all items available">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="1290" as="sourcePoint" />
+            <mxPoint x="450" y="1290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M17" value="M17 (6) finalizes submitted order" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="1456" />
-            <mxPoint as="targetPoint" x="1440" y="1456" />
+        <mxCell id="M17" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M17 (6) finalizes submitted order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1366" as="sourcePoint" />
+            <mxPoint x="1440" y="1366" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M18" value="M18 (6) provides submitted order details" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1440" y="1532" />
-            <mxPoint as="targetPoint" x="450" y="1532" />
+        <mxCell id="M18" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M18 (6) provides submitted order details">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="1442" as="sourcePoint" />
+            <mxPoint x="450" y="1442" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M19" value="M19 (6) places order in kitchen queue" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="1608" />
-            <mxPoint as="targetPoint" x="1770" y="1608" />
+        <mxCell id="M19" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M19 (6) places order in kitchen queue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1518" as="sourcePoint" />
+            <mxPoint x="1770" y="1518" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M20" value="M20 (6) acknowledges one queued order" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="1770" y="1684" />
-            <mxPoint as="targetPoint" x="450" y="1684" />
+        <mxCell id="M20" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M20 (6) acknowledges one queued order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1770" y="1594" as="sourcePoint" />
+            <mxPoint x="450" y="1594" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M21" value="M21 (6) acknowledges submitted order" style="endArrow=block;html=0;strokeColor=#334155;fontSize=18;labelBackgroundColor=#ffffff;whiteSpace=wrap;" edge="1" parent="1">
-          <mxGeometry as="geometry" relative="1">
-            <mxPoint as="sourcePoint" x="450" y="1760" />
-            <mxPoint as="targetPoint" x="120" y="1760" />
+        <mxCell id="M21" edge="1" parent="1" style="endArrow=block;html=0;strokeColor=#000000;fontSize=16;labelBackgroundColor=#ffffff;whiteSpace=nowrap;" value="M21 (6) acknowledges submitted order">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1670" as="sourcePoint" />
+            <mxPoint x="120" y="1670" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="footer" value="Success requires one table-linked Order, one kitchen entry, and acknowledgment to the Server." style="text;html=0;fontSize=19;align=center;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="30" y="1840" width="1840" height="45" />
         </mxCell>
       </root>
     </mxGraphModel>

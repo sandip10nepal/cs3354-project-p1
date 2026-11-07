@@ -1,6 +1,6 @@
-# Gabriel Suarez P2 Section 3 updates
+# P2 Section 3 updates
 
-Owner: Gabriel Suarez (GXS220049). Replacement content for Sections 3.1 and 3.4 of the shared P2 report. Requirement wording, IDs, and acceptance criteria are preserved from the current team document.
+Sections 3.1 and 3.4 updates. The requirement wording, IDs, and acceptance criteria are unchanged from P1.
 
 ## 3.1 Functional requirements
 
@@ -23,7 +23,7 @@ Owner: Gabriel Suarez (GXS220049). Replacement content for Sections 3.1 and 3.4 
 
 Priority distribution: **9 MUST (64.3%), 4 SHOULD (28.6%), 1 COULD (7.1%)**. Core reservation, seating, order submission, kitchen preparation, and order tracking remain MUST. No requirement is withdrawn.
 
-Source integrity note: [R2] and [R3] are the source references designated in Section 1.4 and the team assignment. The repository currently contains an empty `docs/elicitation/interviews.md`, and no copy of [R2] was available for inspection. These citations identify intended provenance; they do not establish that interviews occurred or that either source has been verified. The source owner must supply evidence and confirm alignment before baseline approval.
+Source note: [R3] is now populated in PR #4 (commit cd6a5a7). Customer interviews 1 and 6 cover booking, confirmation, changes, and cancellation; host interviews 2, 7, and 8 cover seating and table status; server/kitchen interviews 3, 4, and 9 cover orders, preparation notes, availability, and status updates. Some exact rules, including overlap prevention and marking orders served, still need confirmation. [R2] was not available to check. The interview update still needs to be merged into main.
 
 ## 3.4 Use cases
 
