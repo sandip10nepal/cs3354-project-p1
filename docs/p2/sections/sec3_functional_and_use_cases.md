@@ -23,7 +23,7 @@ Sections 3.1 and 3.4 updates. The requirement wording, IDs, and acceptance crite
 
 Priority distribution: **9 MUST (64.3%), 4 SHOULD (28.6%), 1 COULD (7.1%)**. Core reservation, seating, order submission, kitchen preparation, and order tracking remain MUST. No requirement is withdrawn.
 
-Source note: [R3] is now populated in PR #4 (commit cd6a5a7). Customer interviews 1 and 6 cover booking, confirmation, changes, and cancellation; host interviews 2, 7, and 8 cover seating and table status; server/kitchen interviews 3, 4, and 9 cover orders, preparation notes, availability, and status updates. Some exact rules, including overlap prevention and marking orders served, still need confirmation. [R2] was not available to check. The interview update still needs to be merged into main.
+Source note: [R3] interview notes are available in PR #4 (cd6a5a7), awaiting merge. Interviews 1/6 cover reservations, 2/7/8 seating, and 3/4/9 ordering. Exact overlap/served-status rules and [R2] still need confirmation.
 
 ## 3.4 Use cases
 
@@ -41,3 +41,7 @@ Editable source: `docs/p2/diagrams/use-cases.drawio`. The actor-goal list remain
 | UC-06 | Track and Serve Order | Server |
 | UC-07 | Prepare Order | Kitchen Staff |
 | UC-08 | Manage Menu Availability | Authorized Restaurant Staff |
+
+## 3.5 Requirements traceability
+
+See Section 9.1 for the extended requirements traceability matrix.
