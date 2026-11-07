@@ -16,37 +16,35 @@
 
 **Part 1: Seat the party (FR-06)**
 
-0. Trigger: a party with a confirmed reservation arrives and asks to be seated.
-1. The party gives the host the name on the reservation.
-2. The host asks the system for that reservation.
-3. The system finds the confirmed reservation and tells the host its party size, time, and allocated table.
-4. The host confirms that the party has arrived.
-5. The system confirms that the allocated table is free and proposes it.
-6. The host accepts the proposed table.
-7. The system records the table assignment, marks the reservation as seated, and marks the table as occupied.
-8. The host guides the party to the table.
+0. The system presents confirmed reservations due now, their allocated tables, and current occupancy. This is what the host sees before taking action.
+1. The host identifies the arriving party's confirmed reservation.
+2. The system confirms the reservation and gives the host its party size, time, and allocated table.
+3. The host confirms arrival and asks to seat the party.
+4. The system checks that the allocated table is available for this party and confirms the proposed assignment.
+5. The host accepts the proposed table.
+6. The system marks the reservation seated and the table occupied, then confirms the assignment to the host.
 
 **Part 2: Release the table (FR-13)**
 
-9. The party finishes dining and leaves, and the table is cleared.
-10. The host tells the system that the party has left the table.
-11. The system marks the table as available and keeps all future reservations for that table unchanged.
+7. After the party leaves and the table is cleared, the host asks to release that table.
+8. The system identifies the occupied table and its current party, then asks the host to confirm the release.
+9. The host confirms that the party has left and the table is clear.
+10. The system marks the table available, preserves future reservations, and confirms the release to the host.
 
 ## Alternative and exception flows
 
-- **3a. No confirmed reservation is found:** The host asks the party to recheck the name or contact details and returns to step 1. If none is found, the use case ends, and the party may make a new reservation (UC-01).
-- **3b. The party is more than 15 minutes late:** The reservation has already become a no-show and its table is released. The use case ends, and the party may make a new reservation (UC-01).
-- **5a. The allocated table is not free:** The system proposes the smallest available table that fits the party size, and the flow continues at step 6. If no such table exists, follow 5b.
-- **5b. No suitable table is available:** The host tells the party the expected wait. When a suitable table becomes available, the host returns to step 5. If the party leaves, the use case ends with no seating recorded.
-- **6a. The host prefers a different table:** The host picks another available table that fits the party. The system accepts it, and the flow continues at step 7.
-- **6b. The chosen table is not available or would overlap another reservation:** The system rejects the choice and states why. The host returns to step 6.
-- **7a. The assignment cannot be saved:** The system reports the failure. The reservation stays confirmed, the table stays available, and no partial assignment is kept. The host may retry from step 6.
-- **10a. The table is not currently occupied:** The system tells the host there is nothing to release, and no change is made.
+- **2a. No confirmed reservation is found or it was marked no-show:** The system tells the host that the party cannot be seated under that reservation. The host may help the party start a new reservation (UC-01); this use case ends.
+- **4a. The allocated table is not free:** The system proposes the smallest available table that fits the party without conflicting with another reservation. The host continues at step 5.
+- **4b. No suitable table is available:** The system tells the host seating cannot yet be confirmed. The host tells the party the expected wait and returns to step 3 when a table becomes available, or ends the use case if the party leaves.
+- **5a. The host prefers another table:** The host chooses a table that fits the party. The system checks availability and reservation conflicts, then accepts the choice and continues at step 6 or explains why it cannot be used and returns to step 5.
+- **6a. The assignment cannot be saved:** The system reports failure and keeps the reservation confirmed and the table available; no partial seating is recorded. The host may retry from step 5.
+- **8a. The selected table is not occupied:** The system tells the host there is nothing to release, makes no change, and ends the use case.
+- **10a. The release cannot be saved:** The system reports failure and leaves the table occupied. The host may retry from step 7.
 
 ## Postconditions
 
-- **After steps 0 to 8:** The reservation is marked seated and linked to exactly one table, and that table is marked occupied.
-- **After steps 9 to 11:** The table is marked available, and all of its future reservations are preserved.
+- **After steps 0 to 6:** The reservation is marked seated and linked to exactly one table, and that table is marked occupied.
+- **After steps 7 to 10:** The table is marked available, and all of its future reservations are preserved.
 
 ## Scope note
 
