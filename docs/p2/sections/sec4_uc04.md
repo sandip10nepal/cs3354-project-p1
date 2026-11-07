@@ -39,9 +39,6 @@ Alternative and exception flows
 - 7a. The assignment cannot be saved: The system reports the failure. The reservation stays confirmed, the table stays available, and no partial assignment is kept. The host may retry from step 6.
 - 10a. The table is not currently occupied: - The system tells the host that there is nothing to release, and no change is made.
 
-## Postconditions
--  -After steps 1 to 8: - The party's reservation is marked seated, linked to exactly one table, and that table is marked occupied.
--  -After steps 9 to 11: - The table is available, and all of its future reservations are preserved.
-
-## Requirements realised
-FR-06, FR-13
+Postconditions
+-  After steps 1 to 8: - The party's reservation is marked seated, linked to exactly one table, and that table is marked occupied.
+-  After steps 9 to 11: - The table is available, and all of its future reservations are preserved.
