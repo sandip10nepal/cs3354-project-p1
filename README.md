@@ -16,7 +16,6 @@
 | Manideep Pendyala | mcp230000 | `Manideep728` | Usability & Prototype Evidence Lead |
 
 ## Repository Structure
-* `/docs/p1/` — Milestone P1 baseline artifacts.
 * `/docs/p2/` — Milestone P2 final report PDF (tagged `p2`) and section drafts (`/docs/p2/sections/`).
 * `/docs/p2/diagrams/` — Editable diagram source files (Domain Model, Analysis Sequence Diagrams, Component View, and UML Deployment View).
 * `/docs/elicitation/interviews.md` — Stakeholder elicitation notes and operational workflow transcripts (`[R3]`).
