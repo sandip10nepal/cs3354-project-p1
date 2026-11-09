@@ -1,0 +1,16 @@
+{
+  "name": "toulene-spike-s01",
+  "version": "1.0.0",
+  "private": true,
+  "description": "S-01: does WebSocket push meet QAS-01 (order on KDS within 5 s for 95% of orders)? Compared against polling.",
+  "scripts": {
+    "test": "node --test",
+    "bench": "node bench.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "8.18.0"
+  }
+}

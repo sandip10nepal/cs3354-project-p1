@@ -1,0 +1,37 @@
+{
+  "ranAt": "2026-11-07T08:03:37.371Z",
+  "config": {
+    "orders": 50,
+    "tables": 20,
+    "spreadMs": 30000,
+    "pollMs": 3000,
+    "hopMinMs": 5,
+    "hopMaxMs": 80,
+    "stallRate": 0.02,
+    "stallMs": 1000,
+    "thresholdMs": 5000,
+    "seed": 3354
+  },
+  "results": [
+    {
+      "variant": "WebSocket push",
+      "count": 50,
+      "min": 16,
+      "p50": 86,
+      "p95": 138,
+      "max": 150,
+      "missed": 0,
+      "withinThresholdPct": 100
+    },
+    {
+      "variant": "Polling every 3000 ms",
+      "count": 50,
+      "min": 128,
+      "p50": 1506,
+      "p95": 2997,
+      "max": 3112,
+      "missed": 0,
+      "withinThresholdPct": 100
+    }
+  ]
+}
